@@ -1,7 +1,0 @@
--ver "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v"
--lib pmi -vhd "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd"
--sver "C:/Users/jikehara/my designs/lab1_JI/source/impl_1/lab1_seven_segment.sv" "C:/Users/jikehara/my designs/lab1_JI/source/impl_1/lab1_counter.sv" "C:/Users/jikehara/my designs/lab1_JI/source/impl_1/lab1_JI.sv"
--path "C:/Users/jikehara/my designs/lab1_JI" "C:/Users/jikehara/my designs/lab1_JI"
--isTop
--a "iCE40UP"
--t "iCE40UP5K"
