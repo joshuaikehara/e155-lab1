@@ -1,0 +1,229 @@
+synthesis:  version Radiant Software (64-bit) 2026.1.0.37.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Sep  8 05:41:46 2026
+
+
+Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/jikehara/my designs/lab1_JI/impl_1/lab1_JI_impl_1_lattice.synproj -logfile lab1_JI_impl_1_lattice.srp -gui -msgset C:/Users/jikehara/my designs/lab1_JI/promote.xml 
+
+Lattice Synthesis Engine launched.
+
+CRITICAL <35002005> - synthesis: Top-level unit not specified. This may cause functional errors after synthesis.
+Please set the correct top-level unit via:
+  - GUI: Project > Active Implementation > Set Top-Level Unit...
+  - TCL: prj_set_top_module <name>
+  - CLI: -top <name>
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+
+###################### Device Information ######################
+----------------------------------------------------------------
+Lattice Family        | iCE40UP
+----------------------------------------------------------------
+Device                | iCE40UP5K
+----------------------------------------------------------------
+Package               | SG48
+----------------------------------------------------------------
+Performance Grade     | High-Performance_1.2V
+----------------------------------------------------------------
+################################################################
+
+####################### Device Resources #######################
+----------------------------------------------------------------
+Logic Cells           | 5280
+----------------------------------------------------------------
+RAM Blocks            | 30
+----------------------------------------------------------------
+DSP Blocks            | 8
+----------------------------------------------------------------
+PLLs                  | 1
+----------------------------------------------------------------
+I/O Pins              | 56
+----------------------------------------------------------------
+################################################################
+
+Resolving user-selected strategy settings...
+
+INFO <35001797> - synthesis: Use DCC Insertion disabled by default.
+
+###################### Strategy Settings #######################
+----------------------------------------------------------------
+Optimization Goal     | Area
+----------------------------------------------------------------
+Top-level Module Name | 
+----------------------------------------------------------------
+Target Frequency      | 200.000 MHz
+----------------------------------------------------------------
+Maximum Fanout        | 1000
+----------------------------------------------------------------
+Timing Path Count     | 3
+----------------------------------------------------------------
+RAM Read/Write Check  | False
+----------------------------------------------------------------
+BRAM Utilization      | 100.0%
+----------------------------------------------------------------
+DSP Usage             | True
+----------------------------------------------------------------
+DSP Utilization       | 100.0%
+----------------------------------------------------------------
+FSM Encoding Style    | Auto
+----------------------------------------------------------------
+Resolve Mixed Drivers | False
+----------------------------------------------------------------
+Fix Gated Clocks      | True
+----------------------------------------------------------------
+Mux Style             | Auto
+----------------------------------------------------------------
+Use Carry Chain       | True
+----------------------------------------------------------------
+Carry Chain Length    | Infinite
+----------------------------------------------------------------
+Loop Limit            | 1950
+----------------------------------------------------------------
+Use I/O Insertion     | True
+----------------------------------------------------------------
+Use I/O Registers     | True
+----------------------------------------------------------------
+Resource Sharing      | True
+----------------------------------------------------------------
+Propagate Constants   | True
+----------------------------------------------------------------
+Remove Duplicate Reg  | True
+----------------------------------------------------------------
+Force GSR             | False
+----------------------------------------------------------------
+ROM Style             | Auto
+----------------------------------------------------------------
+RAM Style             | Auto
+----------------------------------------------------------------
+Remove LOC Properties | False
+----------------------------------------------------------------
+Partition Flow        | False
+----------------------------------------------------------------
+Use DCC Insertion     | None
+----------------------------------------------------------------
+################################################################
+
+
+The -comp option is FALSE.
+The -syn option is FALSE.
+
+Output HDL filename: lab1_JI_impl_1.vm
+-sdc option: SDC file input is lab1_JI_impl_1_cpe.ldc.
+-path . (searchpath added)
+-path .. (searchpath added)
+-path ../source/impl_1 (searchpath added)
+-path C:/lscc/radiant/2026.1/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+CRITICAL <35001476> - synthesis: A top-level module has not been specified for the mixed language design.
+Verilog design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file: ../source/impl_1/lab1_seven_segment.sv
+Verilog design file: ../source/impl_1/lab1_counter.sv
+Verilog design file: ../source/impl_1/lab1_JI.sv
+VHDL library: pmi
+VHDL design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
+
+Compiling design...
+
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\generic.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\simulation\verilog\iCE40UP\iCE40UP_sp.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v. VERI-1482
+Analyzing Verilog file ../source/impl_1/lab1_seven_segment.sv. VERI-1482
+Analyzing Verilog file ../source/impl_1/lab1_counter.sv. VERI-1482
+Analyzing Verilog file ../source/impl_1/lab1_JI.sv. VERI-1482
+Setting 'lab1_JI' as the top-level module.
+Top module name (Verilog): lab1_JI
+INFO <35901018> - synthesis: ../source/impl_1/lab1_JI.sv(1): compiling module lab1_JI. VERI-1018
+INFO <35901018> - synthesis: C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2'b0). VERI-1018
+INFO <35901018> - synthesis: ../source/impl_1/lab1_seven_segment.sv(1): compiling module lab1_seven_segment. VERI-1018
+INFO <35901018> - synthesis: ../source/impl_1/lab1_counter.sv(1): compiling module lab1_counter. VERI-1018
+[Parameter Setting Section Start]
+
+	[Parameter Settings for top-level module]
+	(Module: lab1_JI)
+		COUNTER_WIDTH             24
+		COUNTER_MAX               24'b100110001001011001111111
+
+	[Parameter Settings for Instance(s): hf_osc]
+	(Module: HSOSC)
+		CLKHF_DIV                 2'b00
+
+	[Parameter Settings for Instance(s): blink_counter]
+	(Module: lab1_counter)
+		WIDTH                     24
+		MAX_COUNT                 24'b100110001001011001111111
+
+[Parameter Setting Section End]
+
+
+
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[3]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[2]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: s[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led[2]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: led[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg[6]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg[5]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg[4]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg[3]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg[2]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg[0]
+
+################### Begin Area Report (lab1_JI)######################
+Number of register bits => 25 of 5280 (0 % )
+CCU2 => 13
+FD1P3XZ => 25
+HSOSC_CORE => 1
+IB => 4
+LUT4 => 18
+OB => 10
+################### End Area Report ##################
+Number of odd-length carry chains : 0
+Number of even-length carry chains : 1
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : int_osc, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : blink_counter/n114, loads : 33
+  Net : blink_counter/n101[23], loads : 14
+  Net : blink_counter/n197, loads : 14
+  Net : blink_counter/n101[21], loads : 13
+  Net : blink_counter/n101[22], loads : 13
+  Net : blink_counter/n195, loads : 13
+  Net : blink_counter/n193, loads : 12
+  Net : blink_counter/n101[20], loads : 12
+  Net : blink_counter/n101[19], loads : 12
+  Net : blink_counter/n191, loads : 11
+################### End Clock Report ##################
+
+################### Begin Constraint Report ######################
+Constraint Summary:
+  Total number of constraints: 0
+  Total number of constraints dropped: 0
+###################  End Constraint Report  ######################
+
+Peak Memory Usage: 88 MB
+
+--------------------------------------------------------------
+Total CPU Time: 0 secs 
+Total REAL Time: 3 secs 
+--------------------------------------------------------------
+Checksum -- synthesis -- netlist: 60d754f849f519c4882ccef79647a0135269060

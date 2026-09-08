@@ -1,0 +1,48 @@
+#Start recording tcl command: 9/7/2026 13:50:27
+#Project Location: C:/Users/jikehara/my_designs/lab1_JI; Project name: lab1_JI
+prj_create -name "lab1_JI" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_add_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_led_controller.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_seven_segment.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_counter.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_JI.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_seven_segment_tb.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_counter_tb.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_JI_tb.ldc"
+prj_set_source_opt -src "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_JI_tb.ldc" {module_filename} {source/impl_1/lab1_JI.sv}
+prj_remove_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_JI_tb.ldc"
+prj_add_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_JI_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_disable_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_JI.sv" "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_seven_segment_tb.sv" "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_counter_tb.sv" "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_JI_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_enable_source "C:/Users/jikehara/my_designs/lab1_JI/source/impl_1/lab1_JI.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jikehara/my_designs/lab1_JI/pin_assignments_lab1_JI.pdc"
+prj_enable_source "C:/Users/jikehara/my_designs/lab1_JI/pin_assignments_lab1_JI.pdc"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 9/7/2026 17:26:16
