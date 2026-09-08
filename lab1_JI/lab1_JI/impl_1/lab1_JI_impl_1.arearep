@@ -1,0 +1,32 @@
+----------------------------------------------------------------------
+Report for cell lab1_JI.TECH
+Register bits:  25 of 5280 (0.473%)
+I/O cells:      14
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        13          100.0
+                            FD1P3XZ        25          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB         4          100.0
+                               LUT4        18          100.0
+                                 OB        10          100.0
+SUB MODULES
+                       lab1_counter         1
+                 lab1_seven_segment         1
+                              TOTAL        73
+----------------------------------------------------------------------
+Report for cell lab1_counter.v1
+Instance Path : blink_counter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        13          100.0
+                            FD1P3XZ        25          100.0
+                               LUT4         9           50.0
+                              TOTAL        47
+----------------------------------------------------------------------
+Report for cell lab1_seven_segment.v1
+Instance Path : seven_segment
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           38.9
+                              TOTAL         7

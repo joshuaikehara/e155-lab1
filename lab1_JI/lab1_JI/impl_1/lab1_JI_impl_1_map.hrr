@@ -1,0 +1,30 @@
+---------------------------------------------------
+Report for cell lab1_JI
+   Instance path: lab1_JI
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         45        100.0
+                               LUTGATE	         19        100.0
+                                LUTCCU	         26        100.0
+                                 IOBUF	         14        100.0
+                                PFUREG	         25        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                          lab1_counter	          1        77.8
+                    lab1_seven_segment	          1        15.6
+---------------------------------------------------
+Report for cell lab1_counter
+   Instance path: lab1_JI/blink_counter
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         35        77.8
+                               LUTGATE	          9        47.4
+                                LUTCCU	         26        100.0
+                                PFUREG	         25        100.0
+---------------------------------------------------
+Report for cell lab1_seven_segment
+   Instance path: lab1_JI/seven_segment
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        15.6
+                               LUTGATE	          7        36.8
