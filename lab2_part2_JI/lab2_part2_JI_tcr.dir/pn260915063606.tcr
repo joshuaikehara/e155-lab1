@@ -1,0 +1,17 @@
+#Start recording tcl command: 9/15/2026 05:41:11
+#Project Location: C:/Users/jikehara/my_designs/lab2_part2_JI; Project name: lab2_part2_JI
+prj_open "C:/Users/jikehara/my_designs/lab2_part2_JI/lab2_part2_JI.rdf"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_part2_JI/source/impl_1/lab2_scanning_tb.sv"
+prj_disable_source "C:/Users/jikehara/my_designs/lab2_part2_JI/source/impl_1/lab2_scanning_tb.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_part2_JI/source/impl_1/lab2_top_tb.sv"
+prj_disable_source "C:/Users/jikehara/my_designs/lab2_part2_JI/source/impl_1/lab2_top_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_set_impl_opt -impl "impl_1" {top} {lab2_top}
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 9/15/2026 06:36:06

@@ -1,0 +1,36 @@
+----------------------------------------------------------------------
+Report for cell lab2_top.TECH
+Register bits:  25 of 5280 (0.473%)
+I/O cells:      13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        13          100.0
+                            FD1P3XZ        25          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB         5          100.0
+                               LUT4        36          100.0
+                                 OB         8          100.0
+SUB MODULES
+lab1_counter(WIDTH=25,MAX_COUNT=25'b1011011100011010111111111)         1
+                      lab2_scanning         1
+                              TOTAL        90
+----------------------------------------------------------------------
+Report for cell lab2_scanning.v1
+Instance Path : scanner
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        13          100.0
+                            FD1P3XZ        25          100.0
+                               LUT4        31           86.1
+SUB MODULES
+lab1_counter(WIDTH=25,MAX_COUNT=25'b1011011100011010111111111)         1
+                              TOTAL        70
+----------------------------------------------------------------------
+Report for cell lab1_counter(WIDTH=25,MAX_COUNT=25'b1011011100011010111111111).v1
+Instance Path : scanner.scan_counter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        13          100.0
+                            FD1P3XZ        25          100.0
+                               LUT4        15           41.7
+                              TOTAL        53

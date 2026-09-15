@@ -1,0 +1,45 @@
+#Start recording tcl command: 9/14/2026 04:15:52
+#Project Location: C:/Users/jikehara/my_designs/lab2_part2_JI; Project name: lab2_part2_JI
+prj_create -name "lab2_part2_JI" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_add_source "C:/Users/jikehara/my_designs/lab2_part2_JI/source/impl_1/lab2_scanning.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_part2_JI/source/impl_1/lab2_top.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jikehara/my_designs/lab2_part2_JI/source/impl_1/lab1_counter.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jikehara/my_designs/lab2_part2_JI/lab2_part2_keypad_pin_assignments.pdc"
+prj_enable_source "C:/Users/jikehara/my_designs/lab2_part2_JI/lab2_part2_keypad_pin_assignments.pdc"
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 9/14/2026 07:27:26
