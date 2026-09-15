@@ -1,0 +1,46 @@
+#Start recording tcl command: 9/14/2026 02:32:27
+#Project Location: C:/Users/jikehara/my_designs/lab2_JI; Project name: lab2_JI
+prj_open "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI.rdf"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab1_seven_segment.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab1_counter.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_multiplexing.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_top.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI_dual_pin_assignments.pdc"
+prj_enable_source "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI_dual_pin_assignments.pdc"
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_top_tb.sv"
+prj_disable_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_top_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_remove_source "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI_dual_pin_assignments.pdc"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_remove_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1.xcf"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI_pin_assign_dual_display.pdc"
+prj_enable_source "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI_pin_assign_dual_display.pdc"
+prj_run Export -impl impl_1
+prj_enable_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_top_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_disable_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_top_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_save 
+prj_close
+#Stop recording: 9/14/2026 04:00:08

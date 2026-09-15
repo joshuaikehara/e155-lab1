@@ -1,0 +1,235 @@
+<HTML>
+<HEAD>
+<TITLE>Lattice TCL Log</TITLE>
+<link href="file:///C:/lscc/radiant/2026.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2026.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="pn260914023130"></A><B><U><big>pn260914023130</big></U></B>
+#Start recording tcl command: 9/14/2026 02:30:32
+#Project Location: C:/Users/jikehara/my_designs/lab2_JI; Project name: lab2_JI
+prj_create -name "lab2_JI" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_close
+#Stop recording: 9/14/2026 02:31:30
+
+
+
+<A name="pn260914040008"></A><B><U><big>pn260914040008</big></U></B>
+#Start recording tcl command: 9/14/2026 02:32:27
+#Project Location: C:/Users/jikehara/my_designs/lab2_JI; Project name: lab2_JI
+prj_open "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI.rdf"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab1_seven_segment.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab1_counter.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_multiplexing.sv"
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_top.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI_dual_pin_assignments.pdc"
+prj_enable_source "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI_dual_pin_assignments.pdc"
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_top_tb.sv"
+prj_disable_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_top_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_remove_source "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI_dual_pin_assignments.pdc"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_remove_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1.xcf"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI_pin_assign_dual_display.pdc"
+prj_enable_source "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI_pin_assign_dual_display.pdc"
+prj_run Export -impl impl_1
+prj_enable_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_top_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_disable_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_top_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_save 
+prj_close
+#Stop recording: 9/14/2026 04:00:08
+
+
+
+<A name="pn260914041552"></A><B><U><big>pn260914041552</big></U></B>
+#Start recording tcl command: 9/14/2026 04:01:16
+#Project Location: C:/Users/jikehara/my_designs/lab2_JI; Project name: lab2_JI
+prj_open "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI.rdf"
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_save 
+prj_close
+#Stop recording: 9/14/2026 04:15:52
+
+
+
+<A name="pn260914073257"></A><B><U><big>pn260914073257</big></U></B>
+#Start recording tcl command: 9/14/2026 07:32:11
+#Project Location: C:/Users/jikehara/my_designs/lab2_JI; Project name: lab2_JI
+prj_open "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI.rdf"
+#Stop recording: 9/14/2026 07:32:57
+
+
+
+<A name="pn260915054111"></A><B><U><big>pn260915054111</big></U></B>
+#Start recording tcl command: 9/15/2026 05:16:18
+#Project Location: C:/Users/jikehara/my_designs/lab2_JI; Project name: lab2_JI
+prj_open "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI.rdf"
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_multiplexing_tb.sv"
+prj_disable_source "C:/Users/jikehara/my_designs/lab2_JI/source/impl_1/lab2_multiplexing_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_save 
+prj_close
+#Stop recording: 9/15/2026 05:41:11
+
+
+
+<A name="pn260915065004"></A><B><U><big>pn260915065004</big></U></B>
+#Start recording tcl command: 9/15/2026 06:47:06
+#Project Location: C:/Users/jikehara/my_designs/lab2_JI; Project name: lab2_JI
+prj_open "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI.rdf"
+prj_close
+#Stop recording: 9/15/2026 06:50:04
+
+
+
+<A name="pn260915065234"></A><B><U><big>pn260915065234</big></U></B>
+#Start recording tcl command: 9/15/2026 06:52:18
+#Project Location: C:/Users/jikehara/my_designs/lab2_JI; Project name: lab2_JI
+prj_open "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI.rdf"
+#Stop recording: 9/15/2026 06:52:34
+
+
+
+<A name="pn260915065607"></A><B><U><big>pn260915065607</big></U></B>
+#Start recording tcl command: 9/15/2026 06:55:39
+#Project Location: C:/Users/jikehara/my_designs/lab2_JI; Project name: lab2_JI
+prj_open "C:/Users/jikehara/my_designs/lab2_JI/lab2_JI.rdf"
+prj_close
+#Stop recording: 9/15/2026 06:56:07
+
+
+
+</PRE></DIV>
+
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#pn260914023130>pn260914023130</A></LI>
+<LI><A href=#pn260914040008>pn260914040008</A></LI>
+<LI><A href=#pn260914041552>pn260914041552</A></LI>
+<LI><A href=#pn260914073257>pn260914073257</A></LI>
+<LI><A href=#pn260915054111>pn260915054111</A></LI>
+<LI><A href=#pn260915065004>pn260915065004</A></LI>
+<LI><A href=#pn260915065234>pn260915065234</A></LI>
+<LI><A href=#pn260915065607>pn260915065607</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+

@@ -1,0 +1,44 @@
+----------------------------------------------------------------------
+Report for cell lab2_top.TECH
+Register bits:  16 of 5280 (0.303%)
+I/O cells:      18
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2         9          100.0
+                            FD1P3XZ        16          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB         9          100.0
+                               LUT4        21          100.0
+                                 OB         9          100.0
+SUB MODULES
+lab1_counter(WIDTH=16,MAX_COUNT=16'b1011101101111111)         1
+                 lab1_seven_segment         1
+                  lab2_multiplexing         1
+                              TOTAL        68
+----------------------------------------------------------------------
+Report for cell lab1_seven_segment.v1
+Instance Path : decoder
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           33.3
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell lab2_multiplexing.v1
+Instance Path : mux
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         9          100.0
+                            FD1P3XZ        16          100.0
+                               LUT4         9           42.9
+SUB MODULES
+lab1_counter(WIDTH=16,MAX_COUNT=16'b1011101101111111)         1
+                              TOTAL        35
+----------------------------------------------------------------------
+Report for cell lab1_counter(WIDTH=16,MAX_COUNT=16'b1011101101111111).v1
+Instance Path : mux.mux_counter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         9          100.0
+                            FD1P3XZ        16          100.0
+                               LUT4         6           28.6
+                              TOTAL        31

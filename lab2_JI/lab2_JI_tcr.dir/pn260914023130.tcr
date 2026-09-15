@@ -1,0 +1,6 @@
+#Start recording tcl command: 9/14/2026 02:30:32
+#Project Location: C:/Users/jikehara/my_designs/lab2_JI; Project name: lab2_JI
+prj_create -name "lab2_JI" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_close
+#Stop recording: 9/14/2026 02:31:30
